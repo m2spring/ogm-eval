@@ -1,0 +1,17 @@
+\#*
+.#*
+*~
+out/
+.ws/
+target/
+mvn.out*
+.settings/
+.repository/
+.settings.xml
+*.iml
+.idea
+.classpath
+.project
+.DS_Store
+mypom.xml
+*.old.key
