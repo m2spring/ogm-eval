@@ -6,12 +6,12 @@
 $ mvn clean package
 ```
 
-## run prerequisites
+## execution prerequisites
 
 * having Neo4j running on localhost:7474
 * simple app tries to connect with admin/admin
 
-## run
+## execution
 
 ```
 $ simple/run.sh
