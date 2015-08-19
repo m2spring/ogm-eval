@@ -4,6 +4,8 @@ import org.neo4j.ogm.session.Session;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springdot.ogm.eval.entities.Resource;
 
+import java.util.Collection;
+
 public class Main{
 	
     public static void main(String[] args){
@@ -17,5 +19,10 @@ public class Main{
         session.save(new Resource("one"));
         session.save(new Resource("two"));
         session.save(new Resource("three"));
+
+        Collection<Resource> resources = session.loadAll(Resource.class);
+        for (Resource resource : resources){
+            System.out.println("* "+resource.getName());
+        }
     }
 }
