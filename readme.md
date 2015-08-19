@@ -15,13 +15,10 @@ $ mvn clean package
 
 ```
 $ simple/run.sh
-14:55:38.799 [main] INFO  o.n.o.m.info.ClassFileProcessor - Starting Post-processing phase
-14:55:38.802 [main] INFO  o.n.o.m.info.ClassFileProcessor - Building annotation class map
-14:55:38.802 [main] INFO  o.n.o.m.info.ClassFileProcessor - Building interface class map for 0 classes
-14:55:38.802 [main] INFO  o.n.o.m.info.ClassFileProcessor - Registering default type converters...
-14:55:38.802 [main] INFO  o.n.o.m.info.ClassFileProcessor - Post-processing complete
-14:55:38.802 [main] INFO  o.n.o.m.info.ClassFileProcessor - 0 classes loaded in 6 milliseconds
-14:55:38.827 [main] INFO  org.neo4j.ogm.session.Neo4jSession - org.springdot.ogm.eval.entities.Resource is not an instance of a persistable class
-14:55:38.827 [main] INFO  org.neo4j.ogm.session.Neo4jSession - org.springdot.ogm.eval.entities.Resource is not an instance of a persistable class
-14:55:38.827 [main] INFO  org.neo4j.ogm.session.Neo4jSession - org.springdot.ogm.eval.entities.Resource is not an instance of a persistable class
+09:41:51.874 [main] INFO  o.n.o.m.info.ClassFileProcessor - Starting Post-processing phase
+09:41:51.877 [main] INFO  o.n.o.m.info.ClassFileProcessor - Building annotation class map
+09:41:51.877 [main] INFO  o.n.o.m.info.ClassFileProcessor - Building interface class map for 2 classes
+09:41:51.877 [main] INFO  o.n.o.m.info.ClassFileProcessor - Registering default type converters...
+09:41:51.877 [main] INFO  o.n.o.m.info.ClassFileProcessor - Post-processing complete
+09:41:51.877 [main] INFO  o.n.o.m.info.ClassFileProcessor - 2 classes loaded in 13 milliseconds
 ```

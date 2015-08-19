@@ -10,7 +10,8 @@ public class Main{
         System.setProperty("username", "admin");
         System.setProperty("password", "admin");
 
-        SessionFactory sf = new SessionFactory("ogm-monolith.domain");
+        SessionFactory sf = new SessionFactory(Resource.class.getPackage().getName());
+
         Session session = sf.openSession("http://localhost:7474");
 
         session.save(new Resource("one"));
