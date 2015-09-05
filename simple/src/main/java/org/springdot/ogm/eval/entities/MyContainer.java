@@ -10,7 +10,7 @@ public class MyContainer extends MyResource{
     @Relationship(type="HAS_CHILD", direction = Relationship.OUTGOING)
     private List<MyResource> children = new ArrayList<>();
 
-    public MyResource child;
+    public MyResource additionalChild;
 
     public List<MyResource> getChildren(){
         return children;
@@ -18,6 +18,6 @@ public class MyContainer extends MyResource{
 
     @Override
     public String toString(){
-        return "child="+child+" children="+children;
+        return "additionalChild="+additionalChild+" children="+children;
     }
 }

@@ -26,7 +26,7 @@ public class SingleChildInChildren{
         MyContainer c = new MyContainer();
         c.getChildren().add(new MyResource().setName("child1"));
         c.getChildren().add(new MyResource().setName("child2"));
-        c.child = new MyResource().setName("additionalChild");
+        c.additionalChild = new MyResource().setName("additionalChild");
 
         System.out.println("\ncreated:");
         System.out.println("c="+c);

@@ -40,7 +40,7 @@ public class Main{
 
     private static MyResource mkTree(String prefix, int depth){
         MyContainer c = new MyContainer();
-        c.child = new MyResource().setName("additionalChild");
+        c.additionalChild = new MyResource().setName("additionalChild");
         c.setName("container");
         c.getChildren().add(new MyResource().setName(prefix+".1"));
         c.getChildren().add(new MyResource().setName(prefix+".2"));
