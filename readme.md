@@ -17,9 +17,8 @@ $ mvn clean package
 ```
 $ simple/single-child-in-children.sh
 ...
-created:
-c=child=MyResource{graphId=null, name='additionalChild'} children=[MyResource{graphId=null, name='child1'}, MyResource{graphId=null, name='child2'}]
+c=additionalChild=MyResource{graphId=null, name='anotherChild'} children=[MyResource{graphId=null, name='child1'}, MyResource{graphId=null, name='child2'}]
 
 loaded:
-c=child=MyResource{graphId=87, name='additionalChild'} children=[MyResource{graphId=87, name='additionalChild'}, MyResource{graphId=89, name='child2'}, MyResource{graphId=88, name='child1'}]
+c=additionalChild=MyResource{graphId=95, name='anotherChild'} children=[MyResource{graphId=95, name='anotherChild'}, MyResource{graphId=97, name='child2'}, MyResource{graphId=96, name='child1'}]
 ```
