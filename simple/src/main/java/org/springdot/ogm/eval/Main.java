@@ -24,7 +24,7 @@ public class Main{
     private static void create(){
         Session session = factory.openSession("http://localhost:7474");
 
-        MyRoot r = new MyRoot(mkTree("", 2));
+        MyRoot r = new MyRoot(mkTree("", 1));
         System.out.println("r="+r);
         session.save(r);
     }
@@ -32,7 +32,7 @@ public class Main{
     private static void read(){
         Session session = factory.openSession("http://localhost:7474");
 
-        Collection<MyRoot> roots = session.loadAll(MyRoot.class);
+        Collection<MyRoot> roots = session.loadAll(MyRoot.class,10);
         for (MyRoot root : roots){
             System.out.println("* "+root);
         }
@@ -40,6 +40,7 @@ public class Main{
 
     private static MyResource mkTree(String prefix, int depth){
         MyContainer c = new MyContainer();
+        c.child = new MyResource().setName("additionalChild");
         c.setName("container");
         c.getChildren().add(new MyResource().setName(prefix+".1"));
         c.getChildren().add(new MyResource().setName(prefix+".2"));
