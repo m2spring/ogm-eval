@@ -15,10 +15,36 @@ $ mvn clean package
 ## execution as simple Java app
 
 ```
-$ simple/single-child-in-children.sh
+$ simple/run.sh
 ...
-c=additionalChild=MyResource{graphId=null, name='anotherChild'} children=[MyResource{graphId=null, name='child1'}, MyResource{graphId=null, name='child2'}]
+created:
+c=children=[MyResource{graphId=null, name='child1'}, MyResource{graphId=null, name='child2'}]
 
 loaded:
-c=additionalChild=MyResource{graphId=95, name='anotherChild'} children=[MyResource{graphId=95, name='anotherChild'}, MyResource{graphId=97, name='child2'}, MyResource{graphId=96, name='child1'}]
+c=children=[MyResource{graphId=154, name='child2'}, MyResource{graphId=153, name='child1'}]
 ```
+
+Make class simple/src/main/java/org/springdot/ogm/eval/entities/MyExtendedResource.java extend from MyResource:
+```
+package org.springdot.ogm.eval.entities;
+
+public class MyExtendedResource
+  extends MyResource
+{
+}
+```
+
+Run again:
+
+```
+$ simple/run.sh
+...
+created:
+c=children=[MyResource{graphId=null, name='child1'}, MyResource{graphId=null, name='child2'}]
+
+loaded:
+c=children=[]
+```
+
+Child are properly persisted, but no longer properly loaded.
+Maybe this is a problem in OGM's metadata?

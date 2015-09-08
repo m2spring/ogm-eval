@@ -10,14 +10,12 @@ public class MyContainer extends MyResource{
     @Relationship(type="HAS_CHILD", direction = Relationship.OUTGOING)
     private List<MyResource> children = new ArrayList<>();
 
-    public MyResource additionalChild;
-
     public List<MyResource> getChildren(){
         return children;
     }
 
     @Override
     public String toString(){
-        return "additionalChild="+additionalChild+" children="+children;
+        return "children="+children;
     }
 }

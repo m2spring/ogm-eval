@@ -7,7 +7,7 @@ import org.springdot.ogm.eval.entities.MyResource;
 
 import java.util.Collection;
 
-public class SingleChildInChildren{
+public class ManySuperClasses{
 
     private static SessionFactory factory;
 
@@ -26,7 +26,6 @@ public class SingleChildInChildren{
         MyContainer c = new MyContainer();
         c.getChildren().add(new MyResource().setName("child1"));
         c.getChildren().add(new MyResource().setName("child2"));
-        c.additionalChild = new MyResource().setName("anotherChild");
 
         System.out.println("\ncreated:");
         System.out.println("c="+c);
