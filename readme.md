@@ -24,15 +24,7 @@ loaded:
 c=children=[MyResource{graphId=154, name='child2'}, MyResource{graphId=153, name='child1'}]
 ```
 
-Make class [simple/src/main/java/org/springdot/ogm/eval/entities/MyExtendedResource.java](simple/src/main/java/org/springdot/ogm/eval/entities/MyExtendedResource.java) extend from MyResource (just remove the commenting-out):
-```
-package org.springdot.ogm.eval.entities;
-
-public class MyExtendedResource
-  extends MyResource
-{
-}
-```
+Make class [simple/src/main/java/org/springdot/ogm/eval/entities/MyExtendedResource.java](simple/src/main/java/org/springdot/ogm/eval/entities/MyExtendedResource.java) extend from MyResource (just remove the commenting-out).
 
 Run again:
 
@@ -46,5 +38,6 @@ loaded:
 c=children=[]
 ```
 
-Child are properly persisted, but no longer properly loaded.
+Children are properly persisted, but no longer properly loaded.
+
 Maybe this is a problem in OGM's metadata?
