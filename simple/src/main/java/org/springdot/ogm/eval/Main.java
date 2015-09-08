@@ -7,7 +7,7 @@ import org.springdot.ogm.eval.entities.MyResource;
 
 import java.util.Collection;
 
-public class ManySuperClasses{
+public class Main{
 
     private static SessionFactory factory;
 
