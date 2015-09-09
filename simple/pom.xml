@@ -12,7 +12,7 @@
     <dependency>
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j-ogm</artifactId>
-      <version>1.1.1</version>
+      <version>1.1.3-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
@@ -39,22 +39,6 @@
             </goals>
             <configuration>
               <cpFile>${project.build.directory}/classpath</cpFile>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>com.jolira</groupId>
-        <artifactId>onejar-maven-plugin</artifactId>
-        <version>1.4.4</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>one-jar</goal>
-            </goals>
-            <configuration>
-              <mainClass>org.springdot.ogm.eval.Main</mainClass>
-              <attachToBuild>true</attachToBuild>
             </configuration>
           </execution>
         </executions>
