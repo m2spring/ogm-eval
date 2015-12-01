@@ -43,22 +43,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <groupId>com.jolira</groupId>
-        <artifactId>onejar-maven-plugin</artifactId>
-        <version>1.4.4</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>one-jar</goal>
-            </goals>
-            <configuration>
-              <mainClass>org.springdot.ogm.eval.Main</mainClass>
-              <attachToBuild>true</attachToBuild>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 
